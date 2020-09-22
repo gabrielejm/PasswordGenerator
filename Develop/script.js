@@ -141,7 +141,7 @@ function generatePass() {
     } else { // looping through to create a password based on the length the user picks
       var randomPassword = "";
       for (let i = 0; i < passLength; i++) {
-        // the has picked between 1 to 4 options and we decide which type of character to use at each position in the password.
+        // the user has picked between 1 to 4 options and we decide which type of character to use at each position in the password.
         var randomCharacterArrayIndex = Math.floor(Math.random() * availableCharacters.length);
         // randomCharacterArray is the random generated array from which is either special or alphaLower
         var randomCharacterArray = availableCharacters[randomCharacterArrayIndex];
