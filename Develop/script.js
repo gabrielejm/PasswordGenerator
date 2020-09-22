@@ -100,6 +100,7 @@ special = [
   "}",
   "~",
 ];
+// creates an empty array that will fill with variable arrays based on user input
 var availableCharacters = [];
 // begins the function to generate password
 function generatePass() {
