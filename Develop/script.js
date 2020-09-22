@@ -1,7 +1,7 @@
 // user input variables
 var passwordElement = document.getElementById("password");
 var btnElement = document.getElementById("generate");
-var copybtnElement = document.getElementById("copy-pass")
+
 
 var passLength;
 var isNumber;
@@ -160,6 +160,16 @@ function generatePass() {
 btnElement.addEventListener("click", function() {
   generatePass();
 });
+
+var copy = document.querySelector("#copy");
+copy.addEventListener("click", function () {
+    copyPassword();
+});
+function copyPassword() {
+  document.getElementById("password").select();
+  document.execCommand("Copy");
+  alert("Password copied to clipboard!");
+};
 
 
 
